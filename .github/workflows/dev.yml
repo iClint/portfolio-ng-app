@@ -20,6 +20,10 @@ jobs:
       - name: Install Angular CLI
         run: npm install -g @angular/cli
 
+      - name: Install dependencies
+        run: npm install
+        working-directory: portfolio-ng-app/
+
       - name: Run tests
         run: ng test
         working-directory: portfolio-ng-app/
