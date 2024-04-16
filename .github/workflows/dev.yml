@@ -25,7 +25,7 @@ jobs:
         working-directory: portfolio-ng-app/
 
       - name: Run tests
-        run: ng test --browsers ChromeHeadless
+        run: ng test --browsers ChromeHeadless --watch=false
         working-directory: portfolio-ng-app/
 
       - name: Build project
